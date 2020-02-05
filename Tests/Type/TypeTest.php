@@ -2,7 +2,7 @@
 
 namespace Skies\QRcodeBundle\Tests\Type;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Skies\QRcodeBundle\Type\Type;
 
 /**
@@ -10,7 +10,7 @@ use Skies\QRcodeBundle\Type\Type;
  *
  * @package Skies\QRcodeBundle\Tests\Type
  */
-class TypeTest extends PHPUnit_Framework_TestCase
+class TypeTest extends TestCase
 {
     /**
      * testConfigureOptions

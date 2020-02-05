@@ -1,1 +1,4 @@
 /.settings/
+vendor/
+.idea/
+composer.lock

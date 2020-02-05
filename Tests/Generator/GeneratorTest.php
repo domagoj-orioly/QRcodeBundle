@@ -2,7 +2,7 @@
 
 namespace Skies\QRcodeBundle\Tests\Generator;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Skies\QRcodeBundle\Generator\Generator;
 
 /**
@@ -10,7 +10,7 @@ use Skies\QRcodeBundle\Generator\Generator;
  *
  * @package SGK\BarcodeBundle\Tests\Generator
  */
-class GeneratorTest extends PHPUnit_Framework_TestCase
+class GeneratorTest extends TestCase
 {
     /**
      * @return array

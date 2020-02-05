@@ -2,16 +2,16 @@
 
 namespace Skies\QRcodeBundle\Twig\Extensions;
 
+use Twig\TwigFunction;
+use Twig\Extension\AbstractExtension;
 use Skies\QRcodeBundle\Generator\Generator;
-use Twig_Extension;
-use Twig_SimpleFunction;
 
 /**
  * Class Project_Twig_Extension
  *
  * @package Skies\QRcodeBundle\Twig\Extensions
  */
-class Barcode extends Twig_Extension
+class Barcode extends AbstractExtension
 {
     /**
      * @var Generator
@@ -32,7 +32,7 @@ class Barcode extends Twig_Extension
     public function getFunctions()
     {
         return [
-            new Twig_SimpleFunction(
+            new TwigFunction(
                 'barcode',
                 function ($options = []) {
                     echo $this->generator->generate($options);
